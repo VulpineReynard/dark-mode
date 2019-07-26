@@ -6,8 +6,10 @@ export const useDarkMode = () => {
   useEffect(() => {
     if (isDark === true) { 
       document.querySelector('body').classList.add('dark-mode');
+      // document.querySelector('.chart-line').classList.add('dark-mode');
     } else if (isDark === false) {
       document.querySelector('body').classList.remove('dark-mode');
+      // document.querySelector('.chart-line').classList.remove('dark-mode');
     }
   }, [isDark]);
   return [isDark, setDarkMode];
